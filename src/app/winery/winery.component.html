@@ -1,0 +1,40 @@
+<p>Bodegas</p>
+
+<div class="grid p-fluid m-4">
+  <div class="p-col-12 p-md-4 margin">
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon"><i class="pi pi-home"></i></span>
+        <input type="text" pInputText placeholder="Ingrese nombre de la bodega">         
+    </div>
+  </div>
+
+  <div class="p-col-12 p-md-4 margin">
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon"><i class="pi pi-sort-numeric-up-alt"></i></span>
+        <input type="text" pInputText placeholder="Codigo de la bodega">   
+    </div>
+  </div>    
+  
+  <div class="p-col-12 p-md-4 margin">
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon"><i class="pi pi-circle-on"></i></span>
+        <input type="text" pInputText placeholder="Color de la bodega">   
+    </div>
+  </div>
+  <br>
+
+  
+  </div>
+  <div class="grid m-4">
+    <div class="p-col-12 p-md-4 second">
+      <span class="p-float-label">
+        <textarea id="float-input" rows="5" cols="30" pInputTextarea></textarea>
+        <label for="float-input">Descripción</label>
+      </span> 
+    </div>
+    <div class="p-col-12 p-md-4 second">
+        <h4 class="text-gray-500 m-0">Estado inicial del producto</h4>
+        <p-selectButton [options]="status" [(ngModel)]="selectStatus" optionLabel="description" optionValue="id"></p-selectButton>
+    </div>
+</div>
+<button pButton type="button" label="Guardar" class="p-button-success"></button>
